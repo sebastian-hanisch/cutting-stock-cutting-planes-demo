@@ -13,6 +13,11 @@ Dieses Stück behebt es tatsächlich: ein echter, algorithmischer
 **Symmetrie-Schnitt**, der redundante Äste erst gar nicht erzeugt - auf
 derselben Instanz, ohne sie zu verändern.
 
+Dieser Schnitt wirkt bereits ungeändert weiter im vierten Stück,
+[cutting-stock-branch-cut-demo](https://github.com/sebastian-hanisch/cutting-stock-branch-cut-demo)
+- der Konvergenz dieser Linie: Verzweigung (Wurzel) + dieser Symmetrie-Schnitt
++ eine neue, an jedem Knoten frisch gelöste LP-Schranke.
+
 ## Der Schnitt
 
 An jedem Suchbaum-Knoten werden die offenen Bins nach Restkapazität
