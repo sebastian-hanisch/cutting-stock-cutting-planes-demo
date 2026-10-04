@@ -70,7 +70,7 @@ def test_cut_never_visits_more_nodes_than_baseline():
 def test_symmetry_amplification_regression():
     # Regressionstest für den Kernfund dieses Stücks: bei spürbarer Symmetrie
     # reduziert der Schnitt die Knotenzahl drastisch (per Prototyp gemessen:
-    # ~48.6x bei diesem Preset) - Schwelle mit deutlicher Marge nach unten.
+    # ~48.5x bei diesem Preset) - Schwelle mit deutlicher Marge nach unten.
     instance = generate_instance(**PRESETS["Spürbare Symmetrie (Schnitt zahlt sich aus)"])
     with_cut = solve(instance, weak_bound, use_symmetry_cut=True)
     without_cut = solve(instance, weak_bound, use_symmetry_cut=False)

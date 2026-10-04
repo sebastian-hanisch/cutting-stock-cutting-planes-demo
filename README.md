@@ -8,7 +8,7 @@ ein unabhängiger Zweig direkt von der Wurzel, parallel zu
 [cutting-stock-dp-demo](https://github.com/sebastian-hanisch/cutting-stock-dp-demo).
 Dort blieb Bin Packings berüchtigte Schwäche - austauschbare (symmetrische)
 Bins blähen den Suchbaum unnötig auf - bewusst unangetastet, nur diagnostisch
-gemessen (Vergleich mit einer künstlich entsymmetrisierten Zwillingsinstanz).
+gemessen (Vergleich mit einer Suche, die gleiche Bins zu einem Ast zusammenfasst).
 Dieses Stück behebt es tatsächlich: ein echter, algorithmischer
 **Symmetrie-Schnitt**, der redundante Äste erst gar nicht erzeugt - auf
 derselben Instanz, ohne sie zu verändern.
@@ -77,7 +77,7 @@ Instanz) als Kernbeleg.
   gilt strikt, empirisch bestätigt (siehe oben), als Regressionstest
   verankert.
 - **Symmetrie-Verstärkungs-Test**: das "Spürbare Symmetrie"-Preset zeigt
-  einen Reduktionsfaktor über 20× (gemessen: ~48,6×).
+  einen Reduktionsfaktor über 20× (gemessen: ~48,5×).
 - **Sicherheitsgrenzen-Test**: auch mit Schnitt greift die Grenze bei
   genügend großen Instanzen zuverlässig.
 
@@ -115,6 +115,4 @@ pytest tests/ -v
 
 ---
 
-Teil des [Operations-Research-Demo-Portfolios](https://sebastianhanisch.net/demos.html) von
-[Sebastian Hanisch](https://sebastianhanisch.net) – Operations Research und Machine Learning.
-Interesse an einer maßgeschneiderten Lösung? [Kontakt aufnehmen](https://sebastianhanisch.net/kontakt.html).
+Diese Demo ist Teil des Portfolios von [Sebastian Hanisch](https://sebastianhanisch.net) – Operations Research und Machine Learning ([Über mich](https://sebastianhanisch.net/ueber-mich.html)). Mehr zur Reihe: [Exakte Suche erklärt: Rucksack und Cutting Stock](https://sebastianhanisch.net/konzepte-exakte-suche.html).

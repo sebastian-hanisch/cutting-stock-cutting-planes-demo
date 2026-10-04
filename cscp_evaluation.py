@@ -1,8 +1,8 @@
 """Kennzahlen aus einem Suchlauf, plus der Kern-Vergleich dieses Stücks: derselbe
 Suchlauf auf DERSELBEN Instanz, einmal ohne, einmal mit aktivem Symmetrie-Schnitt -
-anders als cutting-stock-branch-bound-demo's `symmetry_comparison` (die eine
-künstlich entsymmetrisierte ZWILLINGS-Instanz zum Vergleich löst), zeigt dieser
-Vergleich den echten algorithmischen Effekt auf ein und derselben Instanz."""
+anders als cutting-stock-branch-bound-demo's `symmetry_comparison` (die den Effekt
+nur diagnostisch misst), zeigt dieser Vergleich den Schnitt als Verfahren auf ein
+und derselben Instanz."""
 
 from collections import Counter
 

@@ -57,7 +57,7 @@ parallel zu
 [cutting-stock-dp-demo](https://github.com/sebastian-hanisch/cutting-stock-dp-demo).
 Dort blieb Bin Packings berüchtigte Schwäche - austauschbare (symmetrische) Bins
 blähen den Suchbaum unnötig auf - bewusst UNANGETASTET, nur diagnostisch
-gemessen (Vergleich mit einer künstlich entsymmetrisierten Zwillingsinstanz).
+gemessen (Vergleich mit einer Suche, die gleiche Bins zu einem Ast zusammenfasst).
 Dieses Stück behebt es tatsächlich: ein echter, algorithmischer **Symmetrie-
 Schnitt**, der redundante Äste erst gar nicht erzeugt - auf DERSELBEN Instanz,
 ohne sie zu verändern.
@@ -319,6 +319,6 @@ st.markdown("---")
 
 st.caption(
     "Diese Demo ist Teil des Portfolios von [Sebastian Hanisch](https://sebastianhanisch.net) – "
-    "Operations Research und Machine Learning. Interesse an einer maßgeschneiderten Lösung für "
-    "Ihr Unternehmen? [Kontakt aufnehmen](https://sebastianhanisch.net/kontakt.html)"
+    "Operations Research und Machine Learning ([Über mich](https://sebastianhanisch.net/ueber-mich.html)). "
+    "Mehr zur Reihe: [Exakte Suche erklärt: Rucksack und Cutting Stock](https://sebastianhanisch.net/konzepte-exakte-suche.html)."
 )
