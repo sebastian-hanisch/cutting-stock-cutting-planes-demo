@@ -42,7 +42,7 @@ LP-Relaxation, aber Symmetrie-Constraints schneiden dort nur symmetrische
 GANZZAHLIGE Lösungen weg, nicht den fraktionalen LP-Wert selbst - eine
 LP-Schranken-Verbesserung wäre hier keine ehrliche Demonstration. Die
 wirklich starke, Muster-basierte LP-Relaxation (Gilmore-Gomory) ist bewusst
-für Column Generation später in dieser Linie reserviert. Dieser Schnitt
+der Column Generation vorbehalten (column-generation-demo in dieser Linie). Dieser Schnitt
 wirkt deshalb direkt auf den kombinatorischen Suchraum - eine andere,
 ebenso legitime Familie von "Cutting Planes" im weiteren Sinne.
 

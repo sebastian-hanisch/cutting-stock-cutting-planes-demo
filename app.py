@@ -5,7 +5,7 @@ Sebastian Hanisch - Operations Research und Machine Learning
 Drittes Stück der Cutting-Stock-Linie: ein unabhängiger Zweig von
 cutting-stock-branch-bound-demo (parallel zu cutting-stock-dp-demo), der einen
 echten, algorithmischen Symmetrie-Schnitt in die Bin-Packing-Suche einbaut - eine
-Vorbereitung für cutting-stock-branch-cut-demo, das diesen Schnitt später mit
+Grundlage für cutting-stock-branch-cut-demo, das diesen Schnitt mit
 echter Verzweigung an jedem Knoten kombiniert.
 
 Lauffähig mit: streamlit run app.py
@@ -93,7 +93,7 @@ Bin Packings kompakte Formulierung hat zwar eine LP-Relaxation, aber
 Symmetrie-Constraints schneiden dort nur symmetrische GANZZAHLIGE Lösungen weg,
 nicht den fraktionalen Wert selbst - eine LP-Schranken-Verbesserung wäre hier
 keine ehrliche Demonstration. Die wirklich starke, Muster-basierte LP-Relaxation
-kommt erst mit Column Generation später in dieser Linie. Dieser Schnitt wirkt
+kommt erst mit Column Generation (column-generation-demo in dieser Linie). Dieser Schnitt wirkt
 deshalb direkt auf den kombinatorischen Suchraum.
         """
     )
@@ -297,8 +297,8 @@ Lösungen weg - der fraktionale LP-Optimalwert selbst bleibt unverändert
 trivial). Eine LP-Schranken-Demonstration wäre hier also keine ehrliche
 Illustration von "Schnitte verbessern die Schranke", wie es
 cutting-planes-demo für Rucksack zeigt. Die wirklich starke, Muster-basierte
-LP-Relaxation (Gilmore-Gomory) ist bewusst für Column Generation später in
-dieser Linie reserviert. Dieser Schnitt wirkt deshalb direkt auf den
+LP-Relaxation (Gilmore-Gomory) ist bewusst der Column Generation vorbehalten
+(column-generation-demo in dieser Linie). Dieser Schnitt wirkt deshalb direkt auf den
 kombinatorischen Suchraum - eine andere, ebenso legitime Familie von
 "Cutting Planes" im weiteren Sinne: gültige Restriktionen, die nachweislich
 nie das Optimum verlieren.
